@@ -7,7 +7,7 @@ const CardWeather = (props) => {
     const img_url=`https://openweathermap.org/img/wn/${weather_now?weather_now.weather[0].icon:''}@2x.png?appid=0eebd1fcf852d29ca0340c5c451d4c9a`
 
   return (
-    <div className='lg:col-span-4 lg:col-start-2 col-span-full  bg-white px-2 py-4 rounded-lg flex flex-col shadow-lg mt-10'>
+    <div className='lg:col-span-4 lg:col-start-2 col-span-full  bg-white px-2 py-4 rounded-lg flex flex-col shadow-lg'>
         <div className='flex flex-col w-full gap-2'>
             <h3 className='w-full lg:text-4xl md:text-3xl text-2xl font-bold'>Weather in {city?city.city_name:''}</h3>
             <div className='flex gap-2 lg:text-2xl md:text-xl text-lg text-gray-500'>
