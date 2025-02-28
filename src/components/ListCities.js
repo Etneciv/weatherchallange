@@ -17,8 +17,8 @@ const ListCities = () => {
         fetchData()
     },[])
   return (
-    <div className='flex w-full  flex grid grid-cols-4 gap-3 p-4'>
-      {data && data.map((city)=>{
+    <div className='w-full grid grid-cols-4 gap-3 lg:p-4 md:p-4 py-4'>
+      {data ? data.map((city)=>{
         return(
             <CardCity 
               key={city.id}
@@ -27,7 +27,7 @@ const ListCities = () => {
               city_weather={city.city_weather}
             />
         )   
-      })}
+      }):'Not information'}
     </div>
   )
 }

@@ -8,11 +8,11 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {
-    extend: {},
+  plugins: {
+    tailwindcss: {
+      config: './tailwind.config.js',
+    },
+    '@tailwindcss/postcss': {},
   },
-  plugins: [
-    require('@tailwindcss/postcss')
-  ],
 }
   
